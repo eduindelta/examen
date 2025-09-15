@@ -1,13 +1,11 @@
-lista_compras = []
 
-lista_compras.append("Leche")
-lista_compras.append("Pan")
-lista_compras.append("Huevos")
-lista_compras.append("Manzanas")
-lista_compras.append("Pollo")
-
-print("Lista de compras inicial:", lista_compras)
+lista_compras = ["Leche", "Pan", "Huevos", "Manzanas", "Queso"]
+print(f"Lista original con 5 artículos: {lista_compras}")
 
 del lista_compras[1]
+print(f"Lista después de eliminar el segundo artículo: {lista_compras}")
 
-print("Lista de compras final:", lista_compras)
+print("\nLista de Compras Final")
+
+for articulo in lista_compras:
+    print(f"- {articulo}")
